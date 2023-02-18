@@ -8,7 +8,7 @@ COPY .npmrc package.json pnpm-lock.yaml .env ./
 RUN pnpm install --frozen-lockfile --prod
 
 # Bundle app source
-COPY . .
+COPY . ./
 
 # EXPOSE 8080
 CMD [ "pnpm", "start" ]
