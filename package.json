@@ -2,7 +2,7 @@
   "name": "ticker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sapphire/framework": "^4.0.2",
     "axios": "^1.2.3",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3"

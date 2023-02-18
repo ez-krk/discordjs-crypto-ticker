@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  bitcoin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node dist/main
+    env_file:
+      - .env.1
+
+  ethereum:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node dist/main
+    env_file:
+      - .env.2
+
+  solana:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node dist/main
+    env_file:
+      - .env.3
